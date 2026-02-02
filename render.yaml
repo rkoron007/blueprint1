@@ -3,7 +3,7 @@ services:
     plan: free
     name: django-app
     runtime: python
-    repo: https://github.com/render-examples/django.git
+    repo: https://github.com/rkoron007/django.git
     buildCommand: './build.sh'
     startCommand: 'python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker'
     envVars:
