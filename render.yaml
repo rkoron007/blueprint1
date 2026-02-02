@@ -1,6 +1,6 @@
 services:
   - type: web
-    plan: pro
+    plan: free
     name: django-app
 
     runtime: python
