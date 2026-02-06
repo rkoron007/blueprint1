@@ -3,6 +3,7 @@ previews:
 
 services:
   - type: web
+    id: simple-test-app
     name: simple-test-app
     runtime: python
     plan: free
@@ -17,6 +18,7 @@ services:
         value: 3.11.0
 
 databases:
-  - name: simple-test-db
+  - id: simple-test-db
+    name: simple-test-db
     databaseName: testdb
     plan: free
