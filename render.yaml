@@ -16,5 +16,5 @@ services:
           property: connectionString
 
 databases:
-  - name: django-app-db
+  - name: django-app-db-1
     plan: free
