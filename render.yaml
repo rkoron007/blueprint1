@@ -1,3 +1,5 @@
+previews:
+  generation: automatic
 services:
   - type: web
     plan: free
@@ -16,5 +18,3 @@ services:
 databases:
   - name: django-app-db
     plan: free
-previews:
-  generation: automatic
