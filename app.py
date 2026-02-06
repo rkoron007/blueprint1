@@ -9,16 +9,32 @@ def home():
     return jsonify({
         'status': 'success',
         'message': 'Simple test app is running!',
+        'environment': 'PREVIEW ENVIRONMENT - Testing new features!',
         'endpoints': {
             '/': 'This page',
             '/health': 'Health check',
-            '/db': 'Database connection test'
+            '/db': 'Database connection test',
+            '/test': 'NEW! Test endpoint for preview'
         }
     })
 
 @app.route('/health')
 def health():
     return jsonify({'status': 'healthy'}), 200
+
+@app.route('/test')
+def test():
+    """NEW endpoint to demonstrate preview environment"""
+    return jsonify({
+        'status': 'success',
+        'message': 'This is a NEW test endpoint!',
+        'note': 'This only exists in the preview environment',
+        'data': {
+            'feature': 'test-feature',
+            'version': '2.0',
+            'preview': True
+        }
+    })
 
 @app.route('/db')
 def test_db():
