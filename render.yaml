@@ -1,23 +1,15 @@
-previews:
-  generation: automatic
-
 services:
   - type: web
     name: disk-mount-test-app
     runtime: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.0
-    # UNCOMMENT ONE OF THESE DISK CONFIGURATIONS AFTER DEPLOYING AND CHECKING PWD
-    # disk:
-    #   name: test-disk
-    #   mountPath: /opt/render/project/src/data  # Inside project directory
-    #   sizeGB: 1
-    # OR
-    # disk:
-    #   name: test-disk
-    #   mountPath: /var/data  # Outside project directory
-    #   sizeGB: 1
+        value: "3.11.0"
+    # Uncomment and configure disk after deploying and checking pwd:
+    # disks:
+    #   - name: test-disk
+    #     mountPath: /opt/render/project/src/data
+    #     sizeGB: 1
