@@ -8,8 +8,7 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: "3.11.0"
-    # Uncomment and configure disk after deploying and checking pwd:
-    # disks:
-    #   - name: test-disk
-    #     mountPath: /opt/render/project/src/data
-    #     sizeGB: 1
+    disk:
+      name: test-disk
+      mountPath: /opt/render/project/src # Use your path from step 2
+      sizeGB: 1
