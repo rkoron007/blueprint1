@@ -53,10 +53,10 @@ curl "https://your-app.onrender.com/read?path=/opt/render/project/src/data"
 
 This validates the documentation instructs users to:
 
-✅ **Deploy first** - Users deploy without a disk initially  
-✅ **Use `pwd`** - Users find the absolute path via shell command  
-✅ **Understand absolute paths** - Mount path is filesystem absolute, not project-relative  
-✅ **Choose mount location** - Users can mount inside or outside project  
+✅ **Deploy first** - Users deploy without a disk initially
+✅ **Use `pwd`** - Users find the absolute path via shell command
+✅ **Understand absolute paths** - Mount path is filesystem absolute, not project-relative
+✅ **Choose mount location** - Users can mount inside or outside project
 
 ## Common Path Patterns to Test
 
